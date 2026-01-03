@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Show Hide</title>
+  <style>
+    .hide { display: none; }
+  </style>
+</head>
+<body>
+  <p id="para">This is a paragraph</p>
+  <button onclick="toggle()">Toggle</button>
+
+  <script>
+    function toggle() {
+      document.getElementById("para").classList.toggle("hide");
+    }
+  </script>
+</body>
+</html>

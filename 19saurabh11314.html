@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Simple Drawing</title>
+</head>
+<body>
+  <h2>Canvas Drawing</h2>
+
+  <canvas id="myCanvas" width="400" height="300" style="border:1px solid black;"></canvas>
+
+  <script>
+    const canvas = document.getElementById("myCanvas");
+    const ctx = canvas.getContext("2d");
+
+    // Rectangle
+    ctx.fillStyle = "skyblue";
+    ctx.fillRect(50, 50, 150, 100);
+
+    // Circle
+    ctx.beginPath();
+    ctx.arc(280, 120, 40, 0, 2 * Math.PI);
+    ctx.fillStyle = "orange";
+    ctx.fill();
+
+    // Line
+    ctx.moveTo(20, 250);
+    ctx.lineTo(380, 250);
+    ctx.stroke();
+  </script>
+</body>
+</html>
